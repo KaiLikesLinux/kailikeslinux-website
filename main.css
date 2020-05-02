@@ -1,0 +1,147 @@
+/* General Styles */
+body{
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: url("./desktop-background.png") center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li{
+    text-decoration: none;
+}
+
+.mobile{
+    display: none;
+}
+
+/* Panel CSS */
+.panel{
+    color: white;
+    background-color: #252525;
+    padding: 1px;
+    width: 100%;
+}
+
+#time{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.aligner-panel{
+    vertical-align: middle;
+}
+
+.panel-x{
+    width: 33%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.panel button {
+    font-family: arial;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+.panel button:focus {
+    border: none;
+}
+
+.user-settings{
+    float: right;
+}
+
+/* Dock CSS */
+.dock{
+    background-color: #505050;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.dock-x{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.left-most{
+    margin-left: 5px;
+}
+
+.dock-icon{
+    font-size: 35px;
+}
+
+.actions{
+    cursor: pointer;
+}
+
+/* Icon CSS */
+.firefox{
+    color: orange;
+}
+
+.files{
+    color: salmon;
+}
+
+/* Desktop */
+.desktop{
+    height: 100%;
+    z-index: -1;
+}
+
+/* Apps */
+.app{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    height: 80vh;
+    display: none;
+}
+
+.nav{
+    width: 100%;
+    background-color: #191919
+}
+
+.app-title{
+    color: white;
+    margin-left: 40px;
+}
+
+.close-button{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    float: right;
+    padding: 5px;
+}
+
+.nav-comp{
+    display: inline-block;
+}
+
+
+.ffwb{
+    overflow-y: scroll;
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px) {
+    .mobile{
+        display: block;
+    }
+}

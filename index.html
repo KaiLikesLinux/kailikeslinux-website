@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>KaiLikesLinux</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="main.css">
+
+        <!-- Scripts -->
+        <script src="terminal-emulator.js" charset="utf-8"></script>
+        <script src="./client.js" charset="utf-8"></script>
+        <script src="https://kit.fontawesome.com/eb07830743.js" crossorigin="anonymous"></script>
+
+        <!-- Meta -->
+    </head>
+    <body onload="initScripts()">
+        <div class="shell">
+            <div class="panel">
+                <div class="panel-x">
+                    <button onclick="enableTerminalEmulator()" class="app-menu aligner-panel">
+                        quikterm
+                    </button>
+                </div>
+                <div class="panel-x">
+                    <p id="time" class="aligner-panel"></p>
+                </div>
+            </div>
+            <div class="desktop">
+                <!--
+                This is where apps appear when loaded
+                so everything here is not loaded until
+                a button is clicked.
+                -->
+                <div id="flameflox-wb" class="app">
+                    <div class="nav">
+                        <p class="app-title nav-comp">Flameflox Web</p>
+                        <a onclick="closeFFWeb();" class="close-button actions nav-comp">X</a>
+                    </div>
+                    <div class="ffwb">
+                        <h1>About Kai</h1>
+                        <p>I am Kai, a Linux OS developer and programmer from Colorado Springs, Colorado. I work on Ubuntu Lumina, a remix
+                            of Ubuntu with the Lumina desktop environment. I have loved using Linux my whole life but overall I prefer using
+                            FreeBSD. I have no FreeBSD projects in the works, below you can see everything I am actively going, you will also
+                            see my social media. </p>
+                            <br>
+                            <h3>Kai on the internet</h3>
+                            <ul>
+                                <li>Personal</li>
+                                <ul>
+                                    <li>Twitter: <a href="https://twitter.com/KaiLikesLinux" target="_blank">@KaiLikesLinux</a></li>
+                                    <li>YouTube: <a href="https://www.youtube.com/channel/UCO7MWhBJmlp4L1FON75pK4g" target="_blank">KaiLikesLinux</a></li>
+                                    <li>GitHub: <a href="https://github.com/KaiLikesLinux" target="_blank">KaiLikesLinux</a></li>
+                                    <li>dev.to: <a href="https://dev.to/KaiLyons" target="_blank">KaiLyons</a></li>
+                                </ul>
+                                <li>Projects</li>
+                                <ul>
+                                    <li>Ubuntu Lumina</li>
+                                    <ul>
+                                        <li>Twitter: <a href="https://twitter.com/UbuntuLumina" target="_blank">@UbuntuLumina</a></li>
+                                        <li>YouTube: <a href="https://www.youtube.com/channel/UCjRrGOmbRMNIppb6PWMaFrw" target="_blank">UbuntuLumina</a></li>
+                                        <li>Website: <a href="https://UbuntuLumina.org" target="_blank">https://UbuntuLumina.org</a></li>
+                                    </ul>
+                                </ul>
+                            <ul>
+                    </div>
+                </div>
+                <div id="wigglr-fm" class="app">
+                    <div class="nav">
+                        <p class="app-title nav-comp">Wigglr File Manager</p>
+                        <a onclick="closeFileManager();" class="close-button nav-comp actions">X</a>
+                    </div>
+                    <div>
+                        <p>KaiLikesLinux.io currently does not support file management.</p>
+                    </div>
+                </div>
+                <div id="quikterm-te" class="app">
+                    <div class="nav">
+                        <p class="app-title nav-comp">Quikterm</p>
+                        <a onclick="closeTerminalEmulator();" class="close-button nav-comp actions">X</a>
+                    </div>
+                    <div class="terminal">
+                        <p>Compile Error: Quikterm make error: 24464<br>
+                            Error Reads: The Developer is too lazy to do this just yet</p>
+                    </div>
+                </div>
+                <h1 class="mobile">
+                    Hello mobile user, this website needs time to prepare for a non-deskop user.<br>
+                    Mobile CSS has not been made at this time!</h1>
+            </div>
+            <div class="dock">
+                <a onclick="enableFFWeb();" class="dock-x dock-icon actions firefox left-most"><i class="fab fa-firefox-browser"></i></a>
+                <a onclick="enableFileManager();" class="dock-x actions dock-icon files"><i class="fas fa-folder"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
