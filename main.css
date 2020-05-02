@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: url("./desktop-background.png") center center fixed;
+    background: url("https://raw.githubusercontent.com/KaiLikesLinux/kailikeslinux-website/master/desktop-background.png") center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
